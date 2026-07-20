@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Vikash Kumar Pandit | Radhika Homeo — Midnapore</title>
+<meta name="description" content="Radhika Homeo — Dr. Vikash Kumar Pandit, Homeopathic Doctor in Midnapore. Chronic disease, child specialist & kidney stone care. 136+ five-star reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#4C7A5E;
+    --green-dark:#356148;
+    --green-soft:#EAF3EA;
+    --cream:#FBF8F1;
+    --coral:#E07A5F;
+    --ink:#26332C;
+    --muted:#65705F;
+    --border:#DCE7DA;
+    --gold:#E8B84B;
+  }
+  *{margin:0; padding:0; box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+  }
+  h1,h2,h3{font-family:'Quicksand', sans-serif; font-weight:700; color:var(--green-dark);}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+  section{padding:72px 0;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.78rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--coral); margin-bottom:14px;
+  }
+  .eyebrow::before{content:"🌿"; font-size:0.9rem;}
+  .sec-head{max-width:600px; margin:0 auto 44px; text-align:center;}
+  .sec-head h2{font-size:clamp(1.6rem,4vw,2.2rem);}
+  .sec-head p{color:var(--muted); margin-top:10px;}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:14px 28px; border-radius:100px;
+    font-weight:600; font-size:0.95rem;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-primary{background:#25D366; color:#fff; box-shadow:0 10px 26px rgba(37,211,102,0.3);}
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-outline{background:#fff; border:1.5px solid var(--green); color:var(--green);}
+  .btn-outline:hover{background:var(--green); color:#fff; transform:translateY(-2px);}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:200;
+    background:rgba(251,248,241,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    max-width:1100px; margin:0 auto; padding:14px 24px;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Quicksand', sans-serif; font-weight:700; font-size:1.15rem;
+    color:var(--green-dark);
+  }
+  .logo .leaf{font-size:1.3rem;}
+  .nav-links{display:flex; align-items:center; gap:30px; font-size:0.92rem; font-weight:600;}
+  .nav-links a{color:var(--muted);}
+  .nav-links a:hover{color:var(--green-dark);}
+  .nav-cta{
+    background:var(--green); color:#fff !important;
+    padding:10px 20px; border-radius:100px; font-size:0.85rem;
+  }
+  .menu-btn{display:none; background:none; border:none; cursor:pointer;}
+  .menu-btn span{display:block; width:22px; height:2px; background:var(--green-dark); margin:5px 0;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:linear-gradient(180deg, var(--green-soft), var(--cream) 75%);
+    padding:56px 0 40px;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1fr; gap:36px; align-items:center;
+  }
+  .hero-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background:#fff; border:1px solid var(--border);
+    padding:8px 16px; border-radius:100px;
+    font-size:0.8rem; font-weight:600; color:var(--green-dark);
+    margin-bottom:20px;
+  }
+  .hero-badge .stars{color:var(--gold);}
+  .hero h1{font-size:clamp(2rem,6vw,2.9rem); line-height:1.15; margin-bottom:14px;}
+  .hero .role{color:var(--coral); font-weight:700; display:block; font-size:1.05rem; margin-bottom:16px;}
+  .hero p.lede{color:var(--muted); font-size:1.02rem; max-width:480px; margin-bottom:28px;}
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .hero-photo{position:relative; display:flex; justify-content:center;}
+  .hero-photo img{
+    width:300px; height:360px; object-fit:cover; border-radius:24px;
+    box-shadow:0 24px 50px -18px rgba(53,97,72,0.35);
+  }
+  .avail-chip{
+    position:absolute; bottom:-16px; left:50%; transform:translateX(-50%);
+    background:#fff; padding:10px 20px; border-radius:100px;
+    box-shadow:0 12px 24px rgba(38,51,44,0.15);
+    font-size:0.82rem; font-weight:700; color:var(--green-dark);
+    display:flex; align-items:center; gap:8px; white-space:nowrap;
+  }
+  .avail-chip .dot{width:8px; height:8px; border-radius:50%; background:#22C55E;}
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust-strip{
+    background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+    padding:28px 0;
+  }
+  .trust-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:20px; text-align:center;
+  }
+  .trust-grid strong{display:block; font-family:'Quicksand', sans-serif; font-size:1.6rem; color:var(--green-dark);}
+  .trust-grid span{font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:1fr; gap:36px; align-items:center;}
+  .about-text p{color:var(--muted); margin-bottom:16px;}
+  .cred-list li{
+    display:flex; align-items:center; gap:10px;
+    padding:10px 0; border-bottom:1px solid var(--border);
+    font-size:0.94rem; font-weight:600; color:var(--ink);
+  }
+  .cred-list li::before{content:"🌱"; font-size:1rem;}
+  .about-photo img{border-radius:20px; box-shadow:0 20px 40px -16px rgba(53,97,72,0.3);}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:1fr; gap:20px;
+  }
+  .service-card{
+    background:#fff; border:1px solid var(--border); border-radius:18px;
+    padding:28px; text-align:center;
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .service-card:hover{transform:translateY(-6px); box-shadow:0 16px 30px -14px rgba(53,97,72,0.25);}
+  .service-icon{font-size:1.8rem; margin-bottom:14px;}
+  .service-card h3{font-size:1.05rem; margin-bottom:8px;}
+  .service-card p{color:var(--muted); font-size:0.9rem;}
+
+  /* ---------- GALLERY ---------- */
+  .gallery-section{background:var(--green-soft);}
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:14px;
+  }
+  .gallery-item{border-radius:16px; overflow:hidden; position:relative;}
+  .gallery-item img{width:100%; height:200px; object-fit:cover; transition:transform 0.4s ease;}
+  .gallery-item:hover img{transform:scale(1.08);}
+  .gallery-cap{
+    position:absolute; bottom:0; left:0; right:0;
+    padding:10px 12px; font-size:0.75rem; font-weight:600; color:#fff;
+    background:linear-gradient(to top, rgba(38,51,44,0.85), transparent);
+  }
+
+  /* ---------- REVIEWS ---------- */
+  .review-badge{
+    text-align:center; margin-bottom:32px;
+  }
+  .review-badge .big-stars{color:var(--gold); font-size:1.4rem; letter-spacing:3px;}
+  .review-badge p{color:var(--muted); font-size:0.95rem; margin-top:6px;}
+  .reviews-grid{display:grid; grid-template-columns:1fr; gap:20px;}
+  .review-card{
+    background:#fff; border:1px solid var(--border); border-radius:18px; padding:26px;
+  }
+  .review-card .stars{color:var(--gold); margin-bottom:12px; display:block; letter-spacing:2px;}
+  .review-card p{color:var(--ink); font-size:0.94rem; font-style:italic; margin-bottom:14px;}
+  .review-who{display:flex; align-items:center; gap:10px;}
+  .review-avatar{
+    width:34px; height:34px; border-radius:50%; background:var(--green);
+    color:#fff; font-family:'Quicksand', sans-serif; font-weight:700;
+    display:flex; align-items:center; justify-content:center; font-size:0.85rem;
+  }
+  .review-who span{font-size:0.86rem; font-weight:600; color:var(--muted);}
+
+  /* ---------- LOCATION ---------- */
+  .location-grid{display:grid; grid-template-columns:1fr; gap:28px;}
+  .info-card{
+    background:#fff; border:1px solid var(--border); border-radius:18px; padding:32px;
+  }
+  .info-row{display:flex; gap:14px; padding:14px 0; border-bottom:1px solid var(--border);}
+  .info-row:last-child{border-bottom:none;}
+  .info-row .ic{font-size:1.2rem;}
+  .info-row strong{display:block; font-size:0.92rem; margin-bottom:2px;}
+  .info-row span{color:var(--muted); font-size:0.88rem;}
+  .map-card{
+    border-radius:18px; overflow:hidden; border:1px solid var(--border);
+    min-height:260px; position:relative;
+    background:var(--green-soft) url('https://api.iconify.design/mdi:map-marker-radius.svg') center/56px no-repeat;
+  }
+  .map-card a{
+    position:absolute; bottom:0; left:0; right:0;
+    background:linear-gradient(to top, rgba(38,51,44,0.85), transparent);
+    color:#fff; padding:22px; font-weight:700; font-size:0.9rem;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-section{
+    background:var(--green);
+    color:#fff; text-align:center; border-radius:28px;
+    padding:56px 32px; margin:0 24px;
+  }
+  .cta-section h2{color:#fff; font-size:clamp(1.5rem,3.6vw,2.1rem); margin-bottom:14px;}
+  .cta-section p{color:rgba(255,255,255,0.85); max-width:440px; margin:0 auto 28px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:40px 0 28px; text-align:center;}
+  footer .logo{justify-content:center; margin-bottom:10px;}
+  footer p{color:var(--muted); font-size:0.85rem;}
+
+  /* ---------- FLOATING BUTTONS ---------- */
+  .float-buttons{
+    position:fixed; bottom:24px; right:24px; z-index:250;
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .float-btn{
+    width:58px; height:58px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 12px 26px rgba(0,0,0,0.2);
+  }
+  .float-btn.wa{background:#25D366; animation:pulse-wa 2.6s infinite;}
+  .float-btn.call{background:var(--coral);}
+  .float-btn svg{width:26px; height:26px; fill:#fff;}
+  @keyframes pulse-wa{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}
+    70%{box-shadow:0 0 0 16px rgba(37,211,102,0);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity 0.6s ease, transform 0.6s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (min-width:760px){
+    .nav-links{display:flex;}
+    .hero-grid{grid-template-columns:1.1fr 0.9fr; text-align:left;}
+    .hero .lede{margin-left:0;}
+    .cta-row{justify-content:flex-start;}
+    .trust-grid{grid-template-columns:repeat(4,1fr);}
+    .about-grid{grid-template-columns:0.85fr 1.15fr;}
+    .services-grid{grid-template-columns:repeat(3,1fr);}
+    .gallery-grid{grid-template-columns:repeat(4,1fr);}
+    .reviews-grid{grid-template-columns:repeat(3,1fr);}
+    .location-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:759px){
+    .nav-links{
+      position:fixed; top:64px; left:0; right:0;
+      background:var(--cream); flex-direction:column; gap:0;
+      padding:8px 24px 20px; border-bottom:1px solid var(--border);
+      transform:translateY(-150%); transition:transform 0.3s ease;
+    }
+    .nav-links.open{transform:translateY(0);}
+    .nav-links a{padding:12px 0; border-bottom:1px solid var(--border); width:100%;}
+    .menu-btn{display:block;}
+    .hero-photo{order:-1;}
+    .hero-photo img{width:240px; height:290px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <nav>
+    <a href="#top" class="logo"><span class="leaf">🌿</span> Radhika Homeo</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="https://wa.me/919143697882?text=Hello%20Dr.%20Vikash%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <div class="hero-badge"><span class="stars">★★★★★</span> 136+ Verified Reviews</div>
+      <span class="role">Homeopathic Doctor</span>
+      <h1>Gentle, Natural Care for the Whole Family</h1>
+      <p class="lede">Dr. Vikash Kumar Pandit brings caring, holistic homeopathic treatment to Midnapore — for chronic conditions, children, and everyday health concerns.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/919143697882?text=Hello%20Dr.%20Vikash%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.6-8.5 8.6z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a class="btn btn-outline" href="tel:+919143697882">Call Now</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal in">
+      <img src="assets/doctor-portrait.jpg" alt="Dr. Vikash Kumar Pandit, Homeopathic Doctor">
+      <div class="avail-chip"><span class="dot"></span> Open — Anytime by Appointment</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust-strip">
+  <div class="wrap trust-grid">
+    <div><strong>10+</strong><span>Years Experience</span></div>
+    <div><strong>136+</strong><span>Patient Reviews</span></div>
+    <div><strong>5.0★</strong><span>Average Rating</span></div>
+    <div><strong>All Day</strong><span>Availability</span></div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <img src="assets/doctor-with-child.jpg" alt="Dr. Vikash Kumar Pandit examining a young patient">
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow">About the Doctor</p>
+      <h2>Dr. Vikash Kumar Pandit</h2>
+      <p>Dr. Vikash Kumar Pandit is a homeopathic doctor with over 10 years of experience caring for patients across the Midnapore belt. Known for listening patiently and explaining every treatment plan clearly, he takes a gentle, holistic approach to healing.</p>
+      <p>From chronic conditions to child care and kidney stone management, his natural remedies are trusted by families throughout the region — with 136+ reviews and a perfect 5-star rating.</p>
+      <ul class="cred-list">
+        <li>MBBS — Homeopathic Medicine</li>
+        <li>Radhika Homeo, Midnapore</li>
+        <li>Available anytime, by appointment</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="justify-content:center;">What We Treat</p>
+      <h2>Care for Every Age, Every Condition</h2>
+      <p>Holistic homeopathic treatment for the whole family — from common ailments to chronic conditions.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🩺</div>
+        <h3>Chronic Disease Care</h3>
+        <p>Long-term, natural management of chronic health conditions with personalised treatment plans.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">👶</div>
+        <h3>Child Specialist Care</h3>
+        <p>Gentle, safe homeopathic treatment designed specifically for infants and young children.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🪨</div>
+        <h3>Kidney Stone Treatment</h3>
+        <p>Natural homeopathic approach to kidney stone cases, trusted across the Midnapore belt.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">👁️</div>
+        <h3>Eye-Related Concerns</h3>
+        <p>Homeopathic care for common eye-related health issues.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🦴</div>
+        <h3>Bone &amp; Joint Care</h3>
+        <p>Relief and long-term care for bone and joint related conditions.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌿</div>
+        <h3>General Wellness</h3>
+        <p>Everyday health concerns treated with a natural, side-effect-free approach.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="justify-content:center;">Inside the Clinic</p>
+      <h2>A Warm, Caring Space</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="assets/clinic-entrance.jpg" alt="Radhika Homeo clinic entrance">
+        <div class="gallery-cap">Clinic Entrance</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/clinic-waiting-room.jpg" alt="Patients waiting at Radhika Homeo">
+        <div class="gallery-cap">Waiting Area</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/doctor-examining-child.jpg" alt="Dr. Vikash examining a child patient">
+        <div class="gallery-cap">Consultation in Progress</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/doctor-with-child.jpg" alt="Dr. Vikash with a young patient">
+        <div class="gallery-cap">Caring for Little Ones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="justify-content:center;">Patient Reviews</p>
+      <h2>What Our Patients Say</h2>
+    </div>
+    <div class="review-badge reveal">
+      <span class="big-stars">★★★★★</span>
+      <p>5.0 out of 5 — based on 136+ verified reviews</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <span class="stars">★★★★★</span>
+        <p>"I had a wonderful experience at this homeopathic clinic. The doctor listened patiently to my concerns and explained the treatment plan clearly. The medicines were effective, and I noticed significant improvement without any side effects."</p>
+        <div class="review-who"><div class="review-avatar">R</div><span>Verified Patient</span></div>
+      </div>
+      <div class="review-card reveal">
+        <span class="stars">★★★★★</span>
+        <p>"Dr. Vikash is an exceptional homeopathic doctor! He's very attentive, listens carefully, and provides personalized treatment. His natural remedies have worked wonders for me. Highly recommend!"</p>
+        <div class="review-who"><div class="review-avatar">S</div><span>Verified Patient</span></div>
+      </div>
+      <div class="review-card reveal">
+        <span class="stars">★★★★★</span>
+        <p>"Dr. Vikash Kumar Pandit is a very good doctor. For chronic diseases, child specialist care, and stone cases, must visit — trusted across the whole Medinipur belt."</p>
+        <div class="review-who"><div class="review-avatar">M</div><span>Verified Patient</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section id="location">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="justify-content:center;">Visit the Clinic</p>
+      <h2>Find Us in Midnapore</h2>
+    </div>
+    <div class="location-grid">
+      <div class="info-card reveal">
+        <div class="info-row"><span class="ic">📍</span><div><strong>Address</strong><span>Bari Saheb Math, Nannur Chawk, Miabazar Main Road, beside C.C. Saha Ltd, opposite Isha Greeting Card shop, Midnapore, West Bengal 721101</span></div></div>
+        <div class="info-row"><span class="ic">📞</span><div><strong>Phone</strong><span>091436 97882</span></div></div>
+        <div class="info-row"><span class="ic">🕒</span><div><strong>Timing</strong><span>Open all time — by appointment</span></div></div>
+        <div class="info-row"><span class="ic">💬</span><div><strong>Fastest Contact</strong><span>WhatsApp</span></div></div>
+      </div>
+      <div class="map-card reveal">
+        <a href="https://maps.app.goo.gl/GD1yYSwX4BxQ6TEa6" target="_blank" rel="noopener">Get Directions on Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section>
+  <div class="cta-section reveal">
+    <h2>Ready to feel better, naturally?</h2>
+    <p>Message us on WhatsApp anytime to book your appointment with Dr. Vikash Kumar Pandit.</p>
+    <a class="btn btn-primary" href="https://wa.me/919143697882?text=Hello%20Dr.%20Vikash%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" style="background:#fff; color:var(--green-dark); box-shadow:0 10px 26px rgba(0,0,0,0.15);">
+      Message on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <a href="#top" class="logo" style="justify-content:center;"><span class="leaf">🌿</span> Radhika Homeo</a>
+    <p>Dr. Vikash Kumar Pandit — Homeopathic Doctor, Midnapore &nbsp;|&nbsp; © <span id="year"></span> All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="float-buttons">
+  <a class="float-btn wa" href="https://wa.me/919143697882?text=Hello%20Dr.%20Vikash%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.6-8.5 8.6z"/></svg>
+  </a>
+  <a class="float-btn call" href="tel:+919143697882" aria-label="Call now">
+    <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+  </a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
